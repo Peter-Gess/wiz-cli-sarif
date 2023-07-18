@@ -32,8 +32,8 @@ jobs:
         WIZ_CLIENT_ID: ${{ secrets.WIZ_CLIENT_ID }}
         WIZ_CLIENT_SECRET: ${{ secrets.WIZ_CLIENT_SECRET }}
     
-    - name: Add Problem Matcher
-      run: echo "::add-matcher::.github/wizcli-problem-matcher.json"
+   # - name: Add Problem Matcher
+    #  run: echo "::add-matcher::.github/wizcli-problem-matcher.json"
 
     - name: Run wiz-cli IaC scan
       # run: RESULTS=$(./wizcli iac scan --path ./aws --policy "scotty-iac-monitor-only" --name scotty-gh-iac-scan --detailed > wizcli-results.json)
